@@ -1,0 +1,29 @@
+/* 
+    Document   : main.css
+    Created on : 11-abr-2013, 19:01:49
+    Author     : DAW
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body { 
+    background: url(../media/background.jpg) no-repeat center center fixed;
+    background-size: contain;
+    background-position: top;
+    
+    
+}
+#left_page{
+   background-color: #8B6538;
+   margin-top: 2%;
+   margin-left: 3%;
+   width:45%;
+   float: left;
+}
+#right_page{
+   background-color: #8B6538;
+   margin-top: 2%;
+   margin-right: 3%;
+   width:46%;
+   float: right;
+}
+
