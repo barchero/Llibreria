@@ -11,7 +11,20 @@ and open the template in the editor.
         <script src="js/main.js" type="text/javascript"></script>
     </head>
     <body>
-        <div id="left_page">&nbsp;</div>
-        <div id="right_page">&nbsp;</div>
+        <div id="left_page">
+            <input type="text"  placeholder="Search words" id="searchField"/>
+            <input type="button" value="Search" onClick="searchList()"/>
+            <ul id="bookList">
+                <li>hola</li>
+            </ul>
+            
+        </div>
+        <div id="right_page">
+            <input type="text" placeholder="Name" id="nameField" value=""/><br/>
+            <input type="text" placeholder="Author" id="authorField"  value=""/><br/>
+            <input type="text" placeholder="ISBN" id="isbnField"  value=""/><br/>
+            <textarea id="descriptionArea" placeholder="Description"></textarea>
+            
+        </div>
     </body>
 </html>

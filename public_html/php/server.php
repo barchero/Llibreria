@@ -1,7 +1,7 @@
 <?php
-header('Content-Type: plain/text; charset=utf-8');
-$action = $_POST['action'];
-if(isset($_POST['con'])){$con = $_POST['con'];}else{$con="";} 
+//header('Content-Type: plain/text; charset=utf-8');
+$action = $_GET['action'];
+if(isset($_GET['con'])){$con = $_GET['con'];}else{$con="";} 
 switch($action){
     case 'select':
         select($con);
@@ -31,7 +31,8 @@ function select($con){
     }
     $query = "SELECT * FROM llibres ".$condition;
     $res = mysql_query($query);
-    $result = mysql_fetch_array($res);
+    while($result[] = mysql_fetch_array($res));
+    print_r($result);
     $json = json_encode($result);
     echo $json;
 }
